@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+body {
+  font-family: "Roboto Condesed" sans-serif;
+}
+
+:root {
+  --primary-white: #fff;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +43,59 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+/***************************************** Navbar *******************************************************/
+
+
+
+.logo {
+  width: 11.25rem;
+  height: 6rem !important;
+  
+}
+
+.container-fluid{
+ margin-right: 3rem;
+ margin-left: 3rem;
+}
+
+.navbar-collapse  {
+  justify-content: end ;
+}
+
+
+
+
+/************************************** MENU ***********************************************************/
+
+nav a.nav-link {
+  cursor: pointer;
+  letter-spacing: 0.05rem;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav li a {
+  color: var(--primary-white) !important;
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+
+
+.navbar-nav li a.active , .navbar-nav li a:focus{
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+}
+
